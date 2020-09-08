@@ -39,7 +39,7 @@ const sectionsList = [
 ];
 
 const Directory = () => {
-    const [sections, setSections] = useState(sectionsList);
+    const [sections] = useState(sectionsList);
 
     return (
         <div className="directory-menu">
