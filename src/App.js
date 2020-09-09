@@ -45,7 +45,7 @@ function App(props) {
       <Switch>
         <Route exact path="/signin" render={() => currentUser ? (<Redirect to="/"></Redirect>) : (<SignInAndSignUpPage></SignInAndSignUpPage>)}></Route>
         <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/shop" component={ShopPage}></Route>
+        <Route path="/shop" component={ShopPage}></Route>
         <Route exact path="/checkout" component={CheckoutPage}></Route>
       </Switch>
     </div>
