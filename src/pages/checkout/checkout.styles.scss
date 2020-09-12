@@ -41,3 +41,9 @@
     margin-top: 50px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .checkout-page {
+    width: 90%;
+  }
+}

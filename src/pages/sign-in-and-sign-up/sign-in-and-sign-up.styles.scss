@@ -3,3 +3,12 @@
     justify-content: space-evenly;
     margin: 30px auto;
 }
+
+@media screen and (max-width: 800px) {
+    .sign-in-sign-up {
+        flex-direction: column;
+        width: unset;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
