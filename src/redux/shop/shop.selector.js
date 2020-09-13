@@ -16,3 +16,13 @@ export const convertCollectionTOArray = createSelector(
     [selectCollections],
     (collections) => collections ? Object.keys(collections).map((key) => collections[key]) : []
 );
+
+export const selectIsFetching = createSelector(
+    [selectShop],
+    (shop) => shop.isFetching
+);
+
+export const selectIsCollectionsLoaded = createSelector(
+    [selectShop],
+    (shop) => !!shop.collections
+);
